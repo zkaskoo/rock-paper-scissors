@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Choice, GameState, GameRound, GameResult } from '@/types/game';
 import { getComputerChoice, determineWinner } from '@/utils/gameLogic';
 import confetti from 'canvas-confetti';
