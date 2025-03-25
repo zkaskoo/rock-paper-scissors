@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kő Papír Olló
 
-## Getting Started
+Ez egy modern [Next.js](https://nextjs.org) alapú Kő Papír Olló játék, TypeScript és Tailwind CSS használatával.
 
-First, run the development server:
+## Funkciók
+
+-   🎮 Klasszikus Kő-Papír-Olló játékmenet
+-   🎯 Pontszámok követése
+-   🔄 Játékelőzmények mentése
+-   🎆 Győzelmi animáció konfettivel
+-   📱 Reszponzív design minden képernyőméretre
+-   🌙 Modern, sötét téma gradiens háttérrel
+-   🇭🇺 Magyar nyelvű felület
+
+## Telepítés
+
+Először klónozd a projektet:
+
+```bash
+git clone https://github.com/zkaskoo/rock-paper-scissors.git
+cd rock-paper-scissors
+```
+
+Telepítsd a függőségeket:
+
+```bash
+npm install
+# vagy
+yarn install
+# vagy
+pnpm install
+```
+
+## Fejlesztés
+
+Fejlesztői mód indítása:
 
 ```bash
 npm run dev
-# or
+# vagy
 yarn dev
-# or
+# vagy
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Nyisd meg a [http://localhost:3000](http://localhost:3000) címet a böngésződben a játék megtekintéséhez.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A játék a `src/components/Game.tsx` fájl módosításával személyre szabható.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build
 
-## Learn More
+Éles verzió elkészítése:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technológiák
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   [Next.js 15](https://nextjs.org/) - React framework
+-   [TypeScript](https://www.typescriptlang.org/) - Statikus típusellenőrzés
+-   [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+-   [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti) - Konfetti effektusok
 
-## Deploy on Vercel
+## Struktúra
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+/src
+  /app - Next.js App Router
+  /components - React komponensek
+  /types - TypeScript típusdefiníciók
+  /utils - Segédfüggvények
+/public - Statikus fájlok
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Telepítés Vercelen
+
+A legegyszerűbb módja a Next.js alkalmazás telepítésének a [Vercel Platform](https://vercel.com/new) használata.
+
+A Vercel telepítési dokumentációjában további részleteket találsz: [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+## Licenc
+
+MIT
+
+---
+
+Készítette: Tóth Zoltán
