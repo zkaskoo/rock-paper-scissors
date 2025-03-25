@@ -1,6 +1,13 @@
 export type Choice = 'ko' | 'papir' | 'ollo';
 
-export type GameResult = 'Győzelem' | 'Vereség' | 'Döntettlen';
+export type GameResult = 'Győzelem' | 'Vereség' | 'Döntetlen';
+
+export interface GameRound {
+  playerChoice: Choice;
+  computerChoice: Choice;
+  result: GameResult;
+  timestamp: number;
+}
 
 export interface GameState {
   playerChoice: Choice | null;
@@ -10,4 +17,5 @@ export interface GameState {
     player: number;
     computer: number;
   };
+  history: GameRound[];
 } 

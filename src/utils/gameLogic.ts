@@ -7,7 +7,7 @@ export const getComputerChoice = (): Choice => {
 };
 
 export const determineWinner = (playerChoice: Choice, computerChoice: Choice): GameResult => {
-  if (playerChoice === computerChoice) return 'Döntettlen';
+  if (playerChoice === computerChoice) return 'Döntetlen';
   
   const winningCombinations: Record<Choice, Choice> = {
     ko: 'ollo',
