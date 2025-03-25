@@ -1,6 +1,6 @@
-export type Choice = 'rock' | 'paper' | 'scissors';
+export type Choice = 'ko' | 'papir' | 'ollo';
 
-export type GameResult = 'win' | 'lose' | 'draw';
+export type GameResult = 'Győzelem' | 'Vereség' | 'Döntettlen';
 
 export interface GameState {
   playerChoice: Choice | null;

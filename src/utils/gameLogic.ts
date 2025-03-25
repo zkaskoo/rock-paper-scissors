@@ -1,19 +1,19 @@
 import { Choice, GameResult } from '@/types/game';
 
 export const getComputerChoice = (): Choice => {
-  const choices: Choice[] = ['rock', 'paper', 'scissors'];
+  const choices: Choice[] = ['ko', 'papir', 'ollo'];
   const randomIndex = Math.floor(Math.random() * choices.length);
   return choices[randomIndex];
 };
 
 export const determineWinner = (playerChoice: Choice, computerChoice: Choice): GameResult => {
-  if (playerChoice === computerChoice) return 'draw';
+  if (playerChoice === computerChoice) return 'Döntettlen';
   
   const winningCombinations: Record<Choice, Choice> = {
-    rock: 'scissors',
-    paper: 'rock',
-    scissors: 'paper',
+    ko: 'ollo',
+    papir: 'ko',
+    ollo: 'papir',
   };
 
-  return winningCombinations[playerChoice] === computerChoice ? 'win' : 'lose';
+  return winningCombinations[playerChoice] === computerChoice ? 'Győzelem' : 'Vereség';
 }; 
